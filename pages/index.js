@@ -10,6 +10,7 @@ export default function Home() {
     <>
       Hello world
       hi there
+      how are you!
     </>
   )
 }
