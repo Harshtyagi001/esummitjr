@@ -1,16 +1,27 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Parallax from "@/components/Parallax/Parallax";
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer
+} from "react-parallax-mouse";
+// import Model from "@/components/Model";
 
-const inter = Inter({ subsets: ['latin'] })
+import dynamic from 'next/dynamic'
+import Navbar from "@/components/Navbar";
 
+const Model = dynamic(
+  () => import('../components/Model'),
+  { ssr: false }
+)
 export default function Home() {
-  return (
-    <>
-      Hello world
-      hi there
-      hello!
-    </>
+  return(
+    
+     <div>
+     <Navbar/>
+      <Parallax />
+      <Model />
+      </div>
+     
+    
   )
 }
