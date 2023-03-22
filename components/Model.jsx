@@ -3,7 +3,7 @@ import '@google/model-viewer';
 const Model = () => (
   <div id="card" style={
     {
-      position: "relative",
+      // position: "relative",
       // bottom:"0"
     }
   }>
@@ -13,9 +13,9 @@ const Model = () => (
     poster="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b%2Fposter-astronaut.png?v=1599079951717"
     alt="A 3D model of an astronaut"
     shadow-intensity="1"
-    camera-controls
+    // camera-controls
     auto-rotate
-    ar
+    // ar
   ></model-viewer>
 </div>
 )

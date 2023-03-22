@@ -12,7 +12,9 @@
     max-width: 600px;
     border-radius: 6px;
     /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25); */
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
   }
   
   model-viewer {
@@ -73,8 +75,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../public/background.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-blur: 10px; */
   backdrop-filter: brightness(50%) contrast(120%);
+  /* height: 100vh; */
   
    
 }
@@ -100,3 +106,23 @@ body {
   font-family: 'Finger Paint', cursive;
   
 }
+@media (max-width: 768px) {
+  model-viewer{
+    height: 200px;
+  }
+}
+@media (max-width: 426px) {
+  .esum{
+    position: absolute;
+    top:30%;
+  }
+}
+
+@media(min-width:2000px){
+  .soon{
+    font-size: 8rem;
+  }
+  
+}
+
+  

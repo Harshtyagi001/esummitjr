@@ -14,14 +14,14 @@ import { createMedia } from "@artsy/fresnel";
 export default function Parallax() {
   return (
     <>
-          <div className="w-screen h-screen md:hidden "
+          <div className="md:hidden w-screen h-full "
         style={{
           height: "100%",
           width: "100%",
-          zIndex: "5",
+          // zIndex: "5",
         }}
       >
-        <div className=" item-center flex flex-col justify-center h-full w-full absolute top-[15%]">
+        <div className="esum item-center flex flex-col justify-center h-full w-full absolute top-[25%]">
           <MouseParallaxContainer
             className="parallax"
             containerStyle={{
@@ -40,7 +40,7 @@ export default function Parallax() {
           <div></div>
             <MouseParallaxChild
               factorX={0.5}
-              factorY={0.5}
+              factorY={0.2}
               style={{
                 transform: "scale(1.5)",
                 display: "flex",
@@ -51,28 +51,70 @@ export default function Parallax() {
               }}
             >
               
-              <img height="100%" width="100%" src="E-SUMMIT'23.svg" alt="" className="mx-0 my-0"/>
+              <img height="100%" width="100%" src="E-SUMMIT'23.svg" alt="" className=" mx-0 my-0"/>
               
             </MouseParallaxChild>
           </MouseParallaxContainer>
         </div>
+        <div className=" item-center flex flex-col justify-center h-full w-full absolute top-[39%]">
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyle={{
+              width: "100%",
+              height: "100%",
+              display:"grid",
+              gridTemplateRows:"1fr 1fr 2fr",
+              gridTemplateColumns:"2fr 5fr 2fr",
+
+              // overflow:"hidden"
+            }}
+            globalFactorX={0.3}
+            globalFactorY={0.3}
+            resetOnLeave
+          >
+          <div></div>
+            <MouseParallaxChild
+              factorX={0.5}
+              factorY={0.05}
+              style={{
+                transform: "scale(1.1)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+                height: "100%"
+              }}
+            >
+
+              <img height="100%" width="80%" src="junior.svg" alt="" className="mx-0 my-0"/>
+
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
+        </div>
+        <div className="">
+          <Model />
+        </div>
       </div>
+
+
+{/* medium and greater */}
+
+
       <div className="hidden md:inline-block"
         style={{
           height: "100%",
           width: "80%",
-          // background: "#01011A",
           zIndex: "5",
-          // color: "#fff",
+
           position: "absolute",
           top: "0%",
           left:"10%"
 
-          // overflow: "hidden"
+
         }}
       >
         <div className="item-center flex flex-col justify-center h-full w-full absolute">
-          
+
           <MouseParallaxContainer
             className="parallax"
             containerStyle={{
@@ -86,10 +128,10 @@ export default function Parallax() {
             globalFactorX={0.3}
             globalFactorY={0.3}
             resetOnLeave
-            
+
           >
             <div></div>
-            
+
             <MouseParallaxChild
               factorX={0.2}
               factorY={0.2}
@@ -102,7 +144,7 @@ export default function Parallax() {
                 height: "100%"
               }}
             >
-              
+
               <img height="50%" src="1.svg" alt="" className="mx-0 my-0"/>
             </MouseParallaxChild>
             <MouseParallaxChild
@@ -235,7 +277,7 @@ export default function Parallax() {
                 width: "auto",
                 height: "100%",
                 transform: "scale(1.3)",
-                
+
 
               }}
             >

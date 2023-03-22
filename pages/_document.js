@@ -8,7 +8,7 @@ export default function Document() {
    
     <Head />
      
-      <body >
+      <body className='bg-my_bg h-[100vh]' >
         <Main />
         <NextScript />
       </body>
