@@ -1,16 +1,23 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import Parallax from "@/components/Parallax/Parallax";
+import ComingSoon from "@/components/ComingSoon";
+
+
 
 export default function Home() {
-  return (
-    <>
-      Hello world
-      hi there
-      hello!
-    </>
-  )
+
+  return(
+    <div>
+
+
+
+      <Parallax />
+      <div style={{zIndex:"1"}}>
+      <ComingSoon/>
+      </div>
+      </div>
+      )
+
+
+
 }

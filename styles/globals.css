@@ -1,3 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ 
+  #card {
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 6px;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25); */
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+  }
+  
+  model-viewer {
+    width: 100%;
+    height: 400px;
+    /* background-color: #70bcd1; */
+    --poster-color: #ffffff00;
+  }
+
+  #parallax {
+    position: absolute;
+    z-index: 6;
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/349/583/625/abstract-nebula-space-art-digital-art-wallpaper-preview.jpg), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2yy2Jgn2oxmpoGrGk_N5KmT2Z-233M6GUA&usqp=CAU), url(https://c4.wallpaperflare.com/wallpaper/349/583/625/abstract-nebula-space-art-digital-art-wallpaper-preview.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 50%;
+  }
+  h1 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Arial";
+    text-transform: uppercase;
+    opacity: .2;
+    font-size: 70px;
+  }
+  html,
+body,
+head,
+#root {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  
+  font-family: 'Finger-Paint', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/background.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blur: 10px; */
+  backdrop-filter: brightness(50%) contrast(120%);
+  /* height: 100vh; */
+  
+   
+}
+.mobile-font{
+  font-family: 'Finger Paint', cursive;
+  font-size: 3rem;
+  animation: MoveUpDown 3s infinite ;
+}
+
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+.junior::after{
+  content: "Junior";
+  font-size: 1rem;
+  font-family: 'Finger Paint', cursive;
+  
+}
+@media (max-width: 768px) {
+  model-viewer{
+    height: 200px;
+  }
+}
+@media (max-width: 426px) {
+  .esum{
+    position: absolute;
+    top:30%;
+  }
+}
+
+@media(min-width:2000px){
+  .soon{
+    font-size: 8rem;
+  }
+  
+}
+@media (min-width:760px) {
+  model-viewer{
+    height: 500px;
+  }
+}
+
+@media (min-width:2500px) {
+  model-viewer{
+    height: 1000px;
+  }
+}
+
+  
