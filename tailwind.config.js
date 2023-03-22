@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        finger: ['Finger Paint', 'sans-serif'],
+    },
+  },
+  // screens:{
+  //  'xs':'0',
+  //  'sm':'200',
+  //  'md':'690',
+  //  'lg':'1024',
+  //  'xl':'1280',
+  // },
   },
   plugins: [],
 }

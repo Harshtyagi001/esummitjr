@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@artsy/fresnel": "^6.1.0",
     "@google/model-viewer": "^3.0.2",
     "next": "13.2.4",
     "react": "18.2.0",

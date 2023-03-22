@@ -1,17 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  
-  
+ 
   #card {
-    margin: 3em auto;
+    margin: 1em auto;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -33,7 +28,7 @@
     /* width: 100%; */
     /* height: 100vh; */
     /* background-image: url(https://c4.wallpaperflare.com/wallpaper/349/583/625/abstract-nebula-space-art-digital-art-wallpaper-preview.jpg), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2yy2Jgn2oxmpoGrGk_N5KmT2Z-233M6GUA&usqp=CAU), url(https://c4.wallpaperflare.com/wallpaper/349/583/625/abstract-nebula-space-art-digital-art-wallpaper-preview.jpg); */
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-position: 50% 50%;
   }
@@ -73,16 +68,35 @@ a {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  
+  font-family: 'Finger-Paint', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../public/background.jpg);
   /* background-blur: 10px; */
   backdrop-filter: brightness(50%) contrast(120%);
   
-  
-  
    
+}
+.mobile-font{
+  font-family: 'Finger Paint', cursive;
+  font-size: 3rem;
+  animation: MoveUpDown 3s infinite ;
+}
+
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+.junior::after{
+  content: "Junior";
+  font-size: 1rem;
+  font-family: 'Finger Paint', cursive;
+  
 }
