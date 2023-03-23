@@ -14,7 +14,7 @@ import { createMedia } from "@artsy/fresnel";
 export default function Parallax() {
   return (
     <>
-          <div className="md:hidden w-screen h-full "
+          <div className="md:hidden w-screen h-full overflow-hidden"
         style={{
           height: "100%",
           width: "100%",
@@ -86,7 +86,9 @@ export default function Parallax() {
               }}
             >
 
-              <img height="100%" width="80%" src="junior.svg" alt="" className="mx-0 my-0"/>
+              <img height="100%" width="80%" src="https://svgshare.com/i/rNo.svg" alt="" className="mx-0 my-0"/>
+              
+               
 
             </MouseParallaxChild>
           </MouseParallaxContainer>
