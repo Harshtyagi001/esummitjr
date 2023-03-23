@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
  
   #card {
     margin: 1em auto;
@@ -136,4 +137,9 @@ body {
   }
 }
 
+
+body{
+  background-image: url(./../public/wallpaperflare.com_wallpaper\ \(3\).jpg);
   
+}
+
