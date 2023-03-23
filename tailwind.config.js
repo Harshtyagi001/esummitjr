@@ -15,7 +15,7 @@ module.exports = {
         finger: ['Finger Paint', 'sans-serif'],
     },
     backgroundImage: {
-      'bg_image' : "url('../public/background1.jpg')",
+      'bg_image' : "url('https://i.ibb.co/D5nHpmf/background-1.webp')",
     }
   },
   screens:{
