@@ -1,23 +1,14 @@
 import React from 'react'
-// import './Navbar.css'
+
 export default function Navbar() {
   return (
-    <div className='container w-[94%] mx-auto'>
-      <div className='navbar text-white flex
-      justify-between items-center w-full  py-8 ' >
-          <div className='left'>
-          <img className='w-20' src='ecell.png' alt="ecell"/>
-          </div>
-          <div className='right text-2xl font-semibold md:flex-row space-x-14 '>
-          
-            <span><a className='' href="#">HOME</a> </span>
-            <span><a className='' href="#">ABOUT</a> </span>
-            <span><a className='' href="#">FAQs</a> </span>
-            <span><a className='' href="#">CONTACT</a> </span>
-            {/* <span><a className='' href="#">FEEDBACK</a> </span> */}
-            {/* <span className='w-20' ><img src='logo.png' alt="eSummit"/></span> */}
-          </div>
+    
+      <nav className="bg-cyan-400 bg-opacity-20 backdrop-blur w-full absolute z-10">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+           <div className='flex items-center justify-between'>
+             <div className='nav_logo text-white text-3xl'>E-SUMMIT JR</div>
+           </div>
         </div>
-    </div>
+    </nav>
   )
 }
