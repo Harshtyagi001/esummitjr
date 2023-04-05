@@ -9,12 +9,27 @@ const Model = dynamic(
 )
 import dynamic from 'next/dynamic'
 import { createMedia } from "@artsy/fresnel";
+// const isBreakpoint = useMediaQuery(768)
 
 
 export default function Parallax() {
+  const data = [
+    {name: "1.svg", factorX: 0.2, factorY: 0.2 , className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "13.svg", factorX: 0.1, factorY: 0.1 , className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "2.svg", factorX: 0.1, factorY: 0.1, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "3.svg", factorX: 0.1, factorY: 0.1, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "4.svg", factorX: 0.2, factorY: 0.2, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "5.svg", factorX: 0.2, factorY: 0.2, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "6.svg", factorX: 0.2, factorY: 0.1, className: "xs:hidden sm:hidden md:inline-block md:h-[8%] md:h-[9%] p-[0.45rem] md:p-3 lg:p-2"},
+    {name: "7.svg", factorX: 0.3, factorY: 0.2, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "8.svg", factorX: 0.1, factorY: 0.1, className: "xs:hidden sm:hidden md:inline-block transform translate-x-[15%] translate-y-[-75%]"},
+    {name: "9.svg", factorX: 0.1, factorY: 0.1, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "10.svg", factorX: 0.05, factorY: 0.05, className: "xs:hidden sm:hidden md:inline-block "},
+    {name: "11.svg", factorX: 0.1, factorY: 0.1 , className: "xs:hidden sm:hidden md:inline-block "},
+  ]
   return (
     <>
-          <div className="md:hidden w-screen h-full overflow-hidden"
+    <div className="md:hidden w-screen h-full overflow-hidden"
         style={{
           height: "100%",
           width: "100%",
@@ -51,7 +66,7 @@ export default function Parallax() {
               }}
             >
               
-              <img height="100%" width="100%" src="E-SUMMIT'23.svg" alt="" className=" mx-0 my-0"/>
+              <img height="100%" width="100%" src="E-SUMMIT'23.svg" alt="" className=" mx-0 xs:mt-3 md:mt-0"/>
               
             </MouseParallaxChild>
           </MouseParallaxContainer>
@@ -99,10 +114,12 @@ export default function Parallax() {
       </div>
 
 
+
+
 {/* medium and greater */}
 
 
-      <div className="hidden md:inline-block"
+      <div className=""
         style={{
           height: "100%",
           width: "80%",
@@ -110,12 +127,16 @@ export default function Parallax() {
 
           position: "absolute",
           top: "0%",
-          left:"10%"
+          left:"10%",
+          
+          
 
 
         }}
+        
       >
         <div className="item-center flex flex-col justify-center h-full w-full absolute">
+
 
           <MouseParallaxContainer
             className="parallax"
@@ -133,197 +154,36 @@ export default function Parallax() {
 
           >
             <div></div>
+            screen 768px
+            {data.map(item=>{
+              return(
+                <MouseParallaxChild
+                  factorX={item.factorX}
+                  factorY={item.factorY}
+                  style={{
+                    // filter: "invert(1)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "auto",
+                    height: "100%"
+                  }}
+                >
+                  <img height="50%" src={item.name} alt=""  className={item.className} />
+                </MouseParallaxChild>
+              )
+            })}
 
-            <MouseParallaxChild
-              factorX={0.2}
-              factorY={0.2}
-              style={{
-                transform: "scale(1.5)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "100%",
-                height: "100%"
-              }}
-            >
-
-              <img height="50%" src="1.svg" alt="" className="mx-0 my-0"/>
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%"
-              }}
-            >
-              <img height="50%" src="13.svg" alt="" className="mx-0 my-0" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-                transform: "scale(1.5)",
-
-              }}
-            >
-              <img height="50%" src="2.svg" alt="" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%"
-              }}
-            >
-              <img height="50%" src="3.svg" alt="" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.2}
-              factorY={0.2}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%"
-              }}
-            >
-              <img height="50%" src="4.svg" alt="" className="px-0 py-0" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.2}
-              factorY={0.2}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-                transform: "scale(1.5)",
-
-              }}
-            >
-              <img height="50%" src="5.svg" alt="" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.2}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%"
-              }}
-            >
-            <div className="p-[0.45rem] md:p-3 lg:p-2">
-              <img height="50%" src="6.svg" alt="" className="px-0 py-0" />
-              </div>
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.3}
-              factorY={0.2}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%"
-              }}
-            >
-              <img height="50%" src="7.svg" alt="" className="px-0 py-0" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-                transform: "translate(15%,-9%)",
-              }}
-            >
-              <img height="50%" src="8.svg" alt="" className="px-0 py-0" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-                transform: "scale(1.3)",
-
-
-              }}
-            >
-              <img height="50%" src="9.svg" alt="" />
-            </MouseParallaxChild>
-            <MouseParallaxChild
-              factorX={0.05}
-              factorY={0.05}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-
-              }}
-            >
-              <img height="50%" src="10.svg" alt="" className="px-0 py-0" />
-            </MouseParallaxChild>
-
-            <MouseParallaxChild
-              factorX={0.1}
-              factorY={0.1}
-              style={{
-                // filter: "invert(1)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: "auto",
-                height: "100%",
-
-              }}
-            >
-              <img height="50%" src="12.svg" alt="" className="px-0 py-0" />
-            </MouseParallaxChild>
-            <div></div>
-            <div>
+            
+            <div className=" xs:col-start-[7] xs:col-end-[12] sm:row-start-[1] xs:row-start-[1] md:col-start-[15] md:col-end-[16] md:row-start-[1] xs:h-[100%] xs:hidden md:inline-block" >
             <Model/>
             </div>
 
           </MouseParallaxContainer>
         </div>
-        
+        <div className="soon font-finger xs:text-3xl md:text-4xl lg:text-5xl text-white absolute md:inline-block top-[65%] left-[calc(55%-60px)] lg:top-[68%] left-[calc(60%-0px) ]  ">
+      Coming Soon...
+    </div>
       </div>
       
       
