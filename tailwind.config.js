@@ -16,6 +16,9 @@ module.exports = {
     },
     backgroundImage: {
       'bg_image' : "url('https://i.ibb.co/D5nHpmf/background-1.webp')",
+    },
+    boxShadow:{
+      'custom':'0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
     }
   },
   screens:{
