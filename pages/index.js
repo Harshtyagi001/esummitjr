@@ -16,7 +16,7 @@ export default function Home() {
         <title> E-Summit '23 Jr | IIIT Pune </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="parallaxSection"style={{position:'relative',height:'100vh',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
+      <section className="parallaxSection"style={{position:'relative',height:'110vh',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
      
       
       <Banner/>
