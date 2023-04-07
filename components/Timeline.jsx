@@ -16,7 +16,7 @@ const Timeline = () => {
       <h3 className="font-finger text-white md:text-center xs:text-5xl sm:text-left sm:ml-3 md:text-7xl font-arkhip">
         TIMELINE
       </h3>
-      <VerticalTimeline lineColor="#4bd5ff">
+      <VerticalTimeline lineColor="#7e32cf">
         <VerticalTimelineElement
           className="vertical-timeline-element--content "
           contentStyle={{
