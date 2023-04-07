@@ -11,42 +11,30 @@ function NavBar() {
 					<div className="flex items-center justify-between ">
 						<div className="w-full flex items-center justify-between">
 							<div className="">
-								<Link to="/" className="navbar-brand">
+								{/* <Link to="/" className="navbar-brand">
 									E-SUMMIT
-								</Link>
+								</Link> */}
 							</div>
 							<div className="hidden md:block">
-								<div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
+								<div className="flex items-baseline space-x-4 lg:space-x-8 text-[17px] lg:text-[23px]">
 									<a href="/" className="nav-link nav-link-ltr ">
-										<span className="text-[]">HOME</span>
+										<span className="">HOME</span>
 									</a>
 									<a href="/#about" className="nav-link nav-link-ltr ">
 										ABOUT
 									</a>
 
-									<a href="/#eventshelf" className="nav-link nav-link-ltr">
-										EVENTS
-									</a>
-
-									<a href="/#speakers" className="nav-link nav-link-ltr ">
-										SPEAKERS
+									<a href="/#timeline" className="nav-link nav-link-ltr">
+										TIMELINE
 									</a>
 
 									<a href="/#faqs" className="nav-link nav-link-ltr ">
 										FAQs
 									</a>
-									<a href="/#sponsors" className="nav-link nav-link-ltr ">
-										SPONSORS
+                  <a href="/#connect" className="nav-link nav-link-ltr ">
+										LET'S CONNECT
 									</a>
-									<Link to="/leaderboard" className="nav-link nav-link-ltr ">
-										LEADERBOARD
-									</Link>
-									{/* <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    TEAM
-                  </a> */}
+								
 								</div>
 							</div>
 							<div>
@@ -137,37 +125,24 @@ function NavBar() {
 								</a>
 
 								<a
-									href="/#eventshelf"
+									href="/#timeline"
 									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
 								>
-									EVENTS
-								</a>
-
-								<a
-									href="/#speakers"
-									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
-								>
-									SPEAKERS
+									TIMELINE
 								</a>
 
 								<a
 									href="/#faqs"
 									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
 								>
-									FAQS
+									FAQs
 								</a>
-								<a
-									href="/#sponsors"
+                <a
+									href="/#connect"
 									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
 								>
-									SPONSORS
+									LET'S CONNECT
 								</a>
-								<Link
-									to="/leaderboard"
-									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
-								>
-									LEADERBOARD
-								</Link>
 							</div>
 						</div>
 					)}
