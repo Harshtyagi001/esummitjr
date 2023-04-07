@@ -42,7 +42,7 @@ function NavBar() {
 									href="https://dare2compete.com/festival/e-summit22-making-impossible-inevitable-indian-institute-of-information-technology-pune-21495"
 									target="_blank"
 									type="submit"
-									className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm transition duration-150 ease-in-out"
+									className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm md:text-lg transition duration-150 ease-in-out"
 								>
 									REGISTER NOW
 								</a>
