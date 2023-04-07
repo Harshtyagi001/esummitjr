@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Typography } from '@mui/material'
 import React from 'react'
 // import { Link } from 'react-router-dom'
@@ -39,12 +38,3 @@ const Footer = () => {
 }
 
 export default Footer
-=======
-import React from 'react'
-
-export default function Footer() {
-  return (
-    <div>Footer</div>
-  )
-}
->>>>>>> 6e7ac3040f781ff948d2983a475b570912703339

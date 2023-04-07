@@ -4,7 +4,7 @@ import Head from "next/head";
 import Timeline from "../components/Timeline";
 import FAQ from "@/components/FAQ/FAQ";
 
-import { Bannera } from "@/components/Banner";
+import { Banner } from "@/components/Banner";
 
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <section className="parallaxSection"style={{position:'relative',height:'100vh',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
      
       
-      <Bannera/>
+      <Banner/>
       
       
       </section>
