@@ -8,12 +8,12 @@ export default function SingleQuestion({ question, answer }) {
 
   return (
     <>
-      <div className="hover:cursor-pointer font-gilroy">
+      <div className="hover:cursor-pointer font-primelt">
         <div
           onClick={() => setShowAnswer(!showAnswer)}
           className={showAnswer ? `${styles.faqopen}` : `${styles.faq}`}
         >
-          <h2 className=" text-2xl  tracking-wider cursor-pointer  font-arkhip">
+          <h2 className=" text-2xl  tracking-wider cursor-pointer  font-primelt">
             {question}
           </h2>
           {showAnswer ? (

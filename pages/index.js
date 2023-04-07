@@ -1,3 +1,4 @@
+
 import Head from "next/head";
 import About from "@/components/About";
 import Navbar from "@/components/Navbar";
@@ -20,22 +21,15 @@ export default function Home() {
         <title> E-Summit '23 Jr | IIIT Pune </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <section
-        className="parallaxSection xs:h-[110vh] sm:h-[120vh] lg:h-auto"
-        style={{
-          position: "relative",
-          width: "100vw",
-          margin: 0,
-          padding: 0,
-          overflowX: "hidden",
-          overflowY: "hidden",
-        }}
-      >
-        <Banner />
-              
+      <Navbar/>
+      <section id="home" className="parallaxSection xs:h-[110vh] sm:h-[120vh] lg:h-auto"style={{position:'relative',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
+     
+      
+      <Banner/>
+      
+      
       </section>
-      <section
+      <section 
         className="mb-[5%]"
         style={{
           position: "relative",
