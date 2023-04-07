@@ -80,8 +80,7 @@ export const Banner = () => {
             
             <button
               onClick={() => console.log("connect")}
-              className="text-white font-bold font-primerg text-3xl pt-4 tracking-wider flex align-center
-            border-solid border-red-500 3xl:text-6xl"
+              className="text-white font-bold font-primerg text-3xl pt-4 tracking-wider flex align-center 3xl:text-6xl"
             >
               Register Now{" "}
               <ArrowRightCircle

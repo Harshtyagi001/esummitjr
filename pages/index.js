@@ -5,6 +5,13 @@ import { Contact } from "@/components/Contact";
 import Timeline from "../components/Timeline";
 import FAQ from "@/components/FAQ/FAQ";
 import { Banner } from "@/components/Banner";
+// import {BsFillArrowUpCircleFill} from 'react-icons/bs'
+const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+
+function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 export default function Home() {
   return (
@@ -78,6 +85,7 @@ export default function Home() {
       >
         <Contact />
       </section>
+      {/* <button onClick={scrollToTop()} className="absolute bottom-2 right-2 h-20 w-20 float fixed"><BsFillArrowUpCircleFill/></button> */}
     </div>
   );
 }
