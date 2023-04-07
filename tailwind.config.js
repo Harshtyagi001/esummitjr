@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         finger: ['Finger Paint', 'sans-serif'],
+        primelt: ["Prime-Light", "sans-serif"],
+        primerg: ["Prime-Regular", "sans-serif"],
+        arkhip: ["Arkhip", "sans-serif"],
     },
     backgroundImage: {
       'bg_image' : "url('https://i.ibb.co/D5nHpmf/background-1.webp')",

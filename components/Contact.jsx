@@ -17,12 +17,12 @@ export const Contact = () => {
       e.target.reset()
   };
   return (
-    <section className='text-white'  id='contact'>
+    <section className='text-white'  id='connect'>
       
       <div className={`${Styles.contact_container} `}>
         
         <div className='flex flex-col gap-8' >
-       <h1 className='text-center text-4xl font-finger mt-[4%] 3xl:text-8xl'>About E-Cell</h1>
+       <h1 className='text-center text-4xl font-finger  3xl:text-8xl'>About E-Cell</h1>
           <div className='abt_content font-poppins xs:text-md md:text-lg 3xl:text-4xl '>The Entrepreneurship Cell of IIIT Pune is a non-profit organization that aims to foster the entrepreneurial spirit of young people and provide a platform for the untapped potential of the nation. Through networking with student enterprises, we focus on nurturing the 'Ideas' of budding entrepreneurs and enabling them to blossom into worthwhile endeavors.
  </div>
  <div className='flex justify-center gap-[20%] mt-[3%]'>

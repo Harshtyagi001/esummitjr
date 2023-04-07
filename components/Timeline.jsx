@@ -14,8 +14,8 @@ import { Typography } from "@mui/material";
 const Timeline = () => {
 
   return (
-    <div className=" sm:mx-1.5 md:mx-10">
-    <h3 className="font-finger text-white md:text-center xs:text-5xl sm:text-left sm:ml-3 md:text-8xl">
+    <div className="xs:mx-1.5 md:mx-10">
+    <h3 className="font-finger text-white md:text-center xs:text-5xl sm:text-left sm:ml-3 md:text-7xl">
     TIMELINE
 
     </h3>
