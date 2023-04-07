@@ -10,7 +10,7 @@ export default function FaqSection() {
     <div id="faqs" className="p-4 flex flex-col justify-center items-center">
       <div className="md:w-3/4 w-[100%] space-y-14 text-white" id="faqs">
         <div>
-          <h1 className="text-center xs:text-5xl md:text-7xl font-happy tracking-widest" > FAQ'S</h1>
+          <h1 className="text-center xs:text-5xl md:text-7xl font-happy tracking-widest cursor-default" > FAQ'S</h1>
         </div>
         <div>
           {questions.map((question) => (

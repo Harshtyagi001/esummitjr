@@ -12,7 +12,7 @@ function NavBar() {
             <div className="w-full flex items-center justify-between">
               <div className="">
                 <a to="/#home" className="navbar-brand">
-								<img className='w-14' src='ecell.png' alt=''/>
+								<img className='w-14' src='https://i.imgur.com/lG5djXZ.png' alt=''/>
 								</a>
               </div>
               <div className="hidden md:block">

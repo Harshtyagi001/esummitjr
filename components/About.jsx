@@ -2,7 +2,7 @@ import React from 'react'
 export default function About() {
   return (
     <div className='about' id="about">
-      <div className='about__content text-center  '>
+      <div className='about__content text-center cursor-default '>
         <h1 className='about__heading font-happy text-center
         xs:pt-10  xs:text-3xl s:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-9xl text-white '>ABOUT E-SUMMIT </h1>
         <div className=' grid
