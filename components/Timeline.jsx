@@ -16,7 +16,7 @@ const Timeline = () => {
       <h3 className="font-finger text-white md:text-center xs:text-5xl sm:text-left sm:ml-3 md:text-7xl font-arkhip">
         TIMELINE
       </h3>
-      <VerticalTimeline lineColor="indigo">
+      <VerticalTimeline lineColor="#4bd5ff">
         <VerticalTimelineElement
           className="vertical-timeline-element--content "
           contentStyle={{
@@ -43,7 +43,7 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
             Registration Begins
           </h4>
-          <p className="text-gray-300 font-poppins">
+          <p className="text-gray-300 font-primerg">
             Registration Will be Starting on date
           </p>
         </VerticalTimelineElement>
@@ -73,7 +73,7 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
             Registration Begins
           </h4>
-          <p className="text-gray-300 font-poppins">
+          <p className="text-gray-300 font-primerg">
             Registration Will be Starting on date
           </p>
         </VerticalTimelineElement>
@@ -103,7 +103,7 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
             Registration Begins
           </h4>
-          <p className="text-gray-300 font-poppins">
+          <p className="text-gray-300 font-primerg">
             Registration Will be Starting on date
           </p>
         </VerticalTimelineElement>
