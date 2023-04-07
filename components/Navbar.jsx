@@ -1,52 +1,180 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-// import logo from '../assets/img/logo.svg';
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import { Link } from "react-router-dom";
 
+function NavBar() {
+	const [isOpen, setIsOpen] = useState(false);
+	return (
+		<div className="absolute w-full z-10 ">
+			<nav className="">
+				<div className=" mx-auto px-4 sm:px-6 lg:px-8">
+					<div className="flex items-center justify-between ">
+						<div className="w-full flex items-center justify-between">
+							<div className="">
+								<Link to="/" className="navbar-brand">
+									E-SUMMIT
+								</Link>
+							</div>
+							<div className="hidden md:block">
+								<div className="flex items-baseline space-x-4 lg:space-x-8 text-[10px] lg:text-[14px]">
+									<a href="/" className="nav-link nav-link-ltr ">
+										<span className="text-[]">HOME</span>
+									</a>
+									<a href="/#about" className="nav-link nav-link-ltr ">
+										ABOUT
+									</a>
 
+									<a href="/#eventshelf" className="nav-link nav-link-ltr">
+										EVENTS
+									</a>
 
-export const NavBar = () => {
+									<a href="/#speakers" className="nav-link nav-link-ltr ">
+										SPEAKERS
+									</a>
 
-  const [activeLink, setActiveLink] = useState('home');
-  const [scrolled, setScrolled] = useState(false);
+									<a href="/#faqs" className="nav-link nav-link-ltr ">
+										FAQs
+									</a>
+									<a href="/#sponsors" className="nav-link nav-link-ltr ">
+										SPONSORS
+									</a>
+									<Link to="/leaderboard" className="nav-link nav-link-ltr ">
+										LEADERBOARD
+									</Link>
+									{/* <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    TEAM
+                  </a> */}
+								</div>
+							</div>
+							<div>
+								<a
+									href="https://dare2compete.com/festival/e-summit22-making-impossible-inevitable-indian-institute-of-information-technology-pune-21495"
+									target="_blank"
+									type="submit"
+									className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm transition duration-150 ease-in-out"
+								>
+									REGISTER NOW
+								</a>
+							</div>
+						</div>
+						<div className="-mr-2 flex md:hidden">
+							<button
+								onClick={() => setIsOpen(!isOpen)}
+								type="button"
+								className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"
+								aria-controls="mobile-menu"
+								aria-expanded="false"
+							>
+								<span className="sr-only">Open main menu</span>
+								{!isOpen ? (
+									<svg
+										className="block h-6 w-6"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+										aria-hidden="true"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="M4 6h16M4 12h16M4 18h16"
+										/>
+									</svg>
+								) : (
+									<svg
+										className="block h-6 w-6"
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+										aria-hidden="true"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
+											d="M6 18L18 6M6 6l12 12"
+										/>
+									</svg>
+								)}
+							</button>
+						</div>
+					</div>
+				</div>
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    }
+				<Transition
+					show={isOpen}
+					enter="transition ease-out duration-100 transform"
+					enterFrom="opacity-0 scale-95"
+					enterTo="opacity-100 scale-100"
+					leave="transition ease-in duration-75 transform"
+					leaveFrom="opacity-100 scale-100"
+					leaveTo="opacity-0 scale-95"
+				>
+					{(ref) => (
+						<div
+							className="md:hidden backdrop-blur bg-cyan-400 bg-opacity-20 absolute z-10 w-full"
+							id="mobile-menu"
+						>
+							<div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
+								<a
+									href="/"
+									className="font-Montserrat font-bold hover:bg-cyan-700 text-white block px-3 py-2 rounded-md text-base"
+								>
+									HOME
+								</a>
 
-    window.addEventListener("scroll", onScroll);
+								<a
+									href="/#about"
+									className="font-Montserrat text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+								>
+									ABOUT
+								</a>
 
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [])
+								<a
+									href="/#eventshelf"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									EVENTS
+								</a>
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
+								<a
+									href="/#speakers"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									SPEAKERS
+								</a>
 
-  return (
-    <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
-          <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav">
-            <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-            </Nav>
-           
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Router>
-  )
+								<a
+									href="/#faqs"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									FAQS
+								</a>
+								<a
+									href="/#sponsors"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									SPONSORS
+								</a>
+								<Link
+									to="/leaderboard"
+									className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+								>
+									LEADERBOARD
+								</Link>
+							</div>
+						</div>
+					)}
+				</Transition>
+			</nav>
+		</div>
+	);
 }
+
+export default NavBar;

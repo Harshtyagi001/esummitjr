@@ -1,6 +1,8 @@
 
 import Head from "next/head";
-
+import About from "@/components/About";
+import Navbar from "@/components/Navbar";
+import { Contact } from "@/components/Contact";
 import Timeline from "../components/Timeline";
 import FAQ from "@/components/FAQ/FAQ";
 
@@ -21,15 +23,17 @@ export default function Home() {
       
       
       </section>
-      <section style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100vw',padding:0 ,background: 'linear-gradient(180deg, #08090c 0%, #425870 100%)'}}>
+
+      <section className="mb-[7%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
       <Timeline/>
       </section>
-      <section style={{position:'relative',filter:'vignette(40%)',height:'100vh',width:'100vw',padding:0 }}>
+      <section className="mb-[7%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
       <FAQ/>
       </section>
       {/* <Banner/> */}
-     
-
+      <section className="mb-[7%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
+      <Contact/>
+      </section>
     </div>
   );
 }
