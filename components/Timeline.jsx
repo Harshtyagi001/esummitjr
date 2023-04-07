@@ -3,17 +3,16 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-// import { MdOutlineAppRegistration } from "react-icons/md";
-import { VscDebugStart } from "react-icons/vsc";
 
-import { FaRegCalendarAlt } from "react-icons/fa";
-import { FaRegCalendarCheck } from "react-icons/fa";
-import { Typography } from "@mui/material";
+import { FaHourglassStart,FaHourglassHalf,FaHourglassEnd } from "react-icons/fa";
+
+
+
 
 const Timeline = () => {
   return (
     <div className="xs:mx-1.5 md:mx-10">
-      <h3 className="font-finger text-white md:text-center xs:text-5xl sm:text-left sm:ml-3 md:text-7xl font-arkhip">
+      <h3 className=" text-white md:text-center xs:pl-3 xs:text-5xl sm:text-left sm:ml-3 md:text-7xl font-happy">
         TIMELINE
       </h3>
       <VerticalTimeline lineColor="#7e32cf">
@@ -23,28 +22,28 @@ const Timeline = () => {
             background: "#000",
             color: "#fff",
             WebkitBackdropFilter: "blur(4px)",
-            boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+            boxShadow: "0 8px 8px 0 purple",
             borderRadius: "10px",
             border: "1px solid rgba( 255, 255, 255, 0.18 )",
-            fontColor: "#AACCFF",
+            fontColor: "#fff",
             fontFamily: "primerg",
             fontWeight: "bold",
-            fontSize: "1.5rem",
-            hover: { color: "black", fontColor: "white" },
+            fontSize: "1.7rem",
           }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          contentArrowStyle={{ borderRight: "7px solid  #CE8CF8" }}
+          date="6 April 23 - 13 April 23 "
           iconStyle={{ background: "black", color: "#fff" }}
-          icon={<VscDebugStart />}
+          icon={<FaHourglassStart />}
         >
           <h3 className="vertical-timeline-element-title  text-2xl text-indigo-200 font-arkhip">
-            Round 1
+          Registration:
           </h3>
-          <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
-            Registration Begins
+          <h4 className="vertical-timeline-element-subtitle text-[#CE8CF8] text-1xl font-primelt">
+            Registration Ongoing:
           </h4>
-          <p className="text-gray-300 font-primerg">
-            Registration Will be Starting on date
+          <p className="text-gray-300 font-primelt">
+            Registration is Ongoing on unstop.<br/>
+            Deadline: 13th April 11:59pm
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -53,7 +52,7 @@ const Timeline = () => {
             background: "#000",
             color: "#fff",
             WebkitBackdropFilter: "blur(4px)",
-            boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+            boxShadow: "0 8px 8px 0 purple",
             borderRadius: "10px",
             border: "1px solid rgba( 255, 255, 255, 0.18 )",
             fontColor: "#AACCFF",
@@ -62,19 +61,21 @@ const Timeline = () => {
             fontSize: "1.5rem",
             hover: { color: "black", fontColor: "white" },
           }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          contentArrowStyle={{ borderRight: "7px solid  #CE8CF8" }}
+          date="6 April 23 - 13 April 23"
           iconStyle={{ background: "black", color: "#fff" }}
-          icon={<VscDebugStart />}
+          icon={<FaHourglassHalf />}
         >
           <h3 className="vertical-timeline-element-title  text-2xl text-indigo-200 font-arkhip">
-            Round 1
+            Round 1:
           </h3>
-          <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
-            Registration Begins
+          <h4 className="vertical-timeline-element-subtitle text-[#CE8CF8] text-1xl font-primelt">
+            Test your skills:
           </h4>
-          <p className="text-gray-300 font-primerg">
-            Registration Will be Starting on date
+          <p className="text-gray-300 font-primelt">
+          The first round of E-Summit’23 Jr will be held offline at your respective schools.
+          If the corresponding school can’t host round 1, it will take place at the campus of IIIT Pune
+          on the 8th and 9th of April.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -83,7 +84,7 @@ const Timeline = () => {
             background: "#000",
             color: "#fff",
             WebkitBackdropFilter: "blur(4px)",
-            boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+            boxShadow: "0 8px 8px 0 purple",
             borderRadius: "10px",
             border: "1px solid rgba( 255, 255, 255, 0.18 )",
             fontColor: "#AACCFF",
@@ -92,19 +93,21 @@ const Timeline = () => {
             fontSize: "1.5rem",
             hover: { color: "black", fontColor: "white" },
           }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
+          contentArrowStyle={{ borderRight: "7px solid  #CE8CF8" }}
+          date="15 April 23 - 16 April 23"
           iconStyle={{ background: "black", color: "#fff" }}
-          icon={<VscDebugStart />}
+          icon={<FaHourglassEnd />}
         >
           <h3 className="vertical-timeline-element-title  text-2xl text-indigo-200 font-arkhip">
-            Round 1
+            Round 2:
           </h3>
-          <h4 className="vertical-timeline-element-subtitle text-[#4bd5ff] text-1xl font-primerg">
-            Registration Begins
+          <h4 className="vertical-timeline-element-subtitle text-[#CE8CF8] text-1xl font-primelt">
+            Endgame:
           </h4>
-          <p className="text-gray-300 font-primerg">
-            Registration Will be Starting on date
+          <p className="text-gray-300 font-primelt">
+          The finale of E-Summit’23 Jr will be held at the campus of the Indian Institute of Information Technology, Pune,
+           on the 15th-16th of April.More details about the final round will be announced soon to the finalists.
+
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

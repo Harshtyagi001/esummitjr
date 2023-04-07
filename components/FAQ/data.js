@@ -3,47 +3,47 @@
 export const data = [
     {
       id: 1,
-      question: "What is E-Summit 2k23?",
+      question: "What is E-Summit 2k23 Junior?",
       answer:
-        "E-Summit 2k23 aims at bringing together the best minds and fashioning the most innovative solutions. Besides conceptualizing ideas and envisaging contributing to society, E-Summit 2k23 consists of stunning events and ingenious sessions with the finest entrepreneurs and industrialists.",
+        "E-Cell IIIT Pune is thrilled to announce that it back with its flagship event, E-Summit’23. We packed the newest iteration of our summit with a wide range of events covering different fields such as entrepreneurship, technology, innovation, design, and many more. Apart from this event which is focused on university students and entrepreneurs, we also brought another fascinating initiative for the nurturing minds of the country, E-Summit’23 Jr. E-Summit’23 Jr [General Quiz Competition (Juniors)] is an exclusive platform for young minds to broaden their knowledge and showcase their skills. ",
     },
     {
       id: 2,
-      question: "Is E-Summit 2k23 in online mode or offline mode?",
+      question: "How is this event going to be conducted?",
       answer:
-        "E-Summit 2k23 is in hybrid mode where Round-I is online and in Round-II, participants can opt to present at IIIT Pune campus in offline mode or through Google meet.",
+        "As a part of this event, an Olympiad exam will be conducted in two rounds to assess the student’s knowledge and skills. The test emphasizes subjects including English, General Knowledge, Computer Science, and Logical Reasoning.",
     },
     {
       id: 3,
-      question: "Are the side events in offline mode or online mode?",
-      answer: "The side events will take place in offline mode only.",
+      question: "What are two rounds of the event?",
+      answer: "In the first round, we will pick the top performers from all the participants. In the second round, we will invite them to the Campus of the Indian Institute of Information Technology, Pune, for an offline competition. ",
     },
     {
       id: 4,
-      question: "How many events will be there in the E-Summit 2k23?",
+      question: "What are the prizes for the winners?",
       answer:
-        "There are 4 major events under E-Summit 2k23 along with other side events.",
+        "Apart from the thrill of the competition, top-performing students stand a chance to win exciting cash prizes up to INR 25,000/-, medals, and certificates of participation and excellence.",
     },
     {
       id: 5,
       question: "Is there any registration fee for the events?",
-      answer: "No, there isn't any registration fee for the events.",
+      answer: "Yes, INR 200/- is registration fee. You can register on unstop by clicking on the register button on the website",
     },
     {
       id: 6,
-      question: "How to register for the event?",
-      answer: "You can register through our website or directly on Devfolio.",
+      question: "What is in the event for young aspiring entrepreneurs?",
+      answer: "They can get the golden opportunity to visit an Institute of National Importance at such a young age. They will be able to meet and interact with some of the most esteemed speakers in the industry and emerging entrepreneurs from various Institutes of National Importance.",
     },
     {
       id: 7,
       question: "Who can participate in the event?",
       answer:
-        "Anyone enrolled in a UG/PG course globally is eligible to participate.",
+        "Anyone studying class VIII, IX or Xth is eligible to participate.",
     },
     {
       id: 8,
-      question: "What is the cash prize associated with different events?",
+      question: "What will be the format of the Round1 question paper?",
       answer:
-        "The total cash prize pool for E-Summit 2k23 is INR 55,000 with additional goodies as well. To know the prize money for individual events, click on register button.",
+        "It consists of 50 Multiple Choice Questions, examining the participants’ knowledge in various fields, such as Technology, Logical Reasoning, General Knowledge, and more. The Quiz will consist of Multiple Choice Questions with a single correct answer.",
     },
   ];
