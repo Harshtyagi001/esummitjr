@@ -22,8 +22,8 @@ export const Contact = () => {
       <div className={`${Styles.contact_container} `}>
         
         <div className='flex flex-col gap-8' >
-       <h1 className='text-center text-4xl font-finger  3xl:text-8xl'>About E-Cell</h1>
-          <div className='abt_content font-poppins xs:text-md md:text-lg 3xl:text-4xl '>The Entrepreneurship Cell of IIIT Pune is a non-profit organization that aims to foster the entrepreneurial spirit of young people and provide a platform for the untapped potential of the nation. Through networking with student enterprises, we focus on nurturing the 'Ideas' of budding entrepreneurs and enabling them to blossom into worthwhile endeavors.
+       <h1 className='text-center text-4xl font-happy  3xl:text-8xl tracking-wider'>About E-Cell</h1>
+          <div className='abt_content font-primerg xs:text-md md:text-xl 3xl:text-4xl '>The Entrepreneurship Cell of IIIT Pune is a non-profit organization that aims to foster the entrepreneurial spirit of young people and provide a platform for the untapped potential of the nation. Through networking with student enterprises, we focus on nurturing the 'Ideas' of budding entrepreneurs and enabling them to blossom into worthwhile endeavors.
  </div>
  <div className='flex justify-center gap-[20%] mt-[3%]'>
   <a href='https://www.linkedin.com/company/e-cell-iiit-pune/?originalSubdomain=in' target='blank'> <AiOutlineLinkedin className='socials'  /></a>
@@ -34,7 +34,7 @@ export const Contact = () => {
  </div>
         </div>
         <div className={`${Styles.right}`}>
-        <h5 className='text-center text-4xl mt-[3%] mb-[6%] font-finger 3xl:text-8xl'>Get in Touch</h5>
+        <h5 className='text-center text-4xl mt-[1%] mb-[6%] font-happy 3xl:text-8xl tracking-wider'>Get in Touch</h5>
            <form className={`${Styles.form}`} ref={form} onSubmit={sendEmail}>
               <input type='text' name='name' placeholder='Your Full Name ' required />
               <input type='email' name='email' placeholder='Your Email' required/>

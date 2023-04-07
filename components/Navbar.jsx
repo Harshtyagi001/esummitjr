@@ -5,19 +5,19 @@ import { Link } from "react-router-dom";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="absolute w-full z-10 top-2 font-arkhip ">
+    <div className="absolute w-full z-10 top-2 font-primerg ">
       <nav className="">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
               <div className="">
-                {/* <Link to="/" className="navbar-brand">
-									E-SUMMIT
-								</Link> */}
+                <a to="/#home" className="navbar-brand">
+								<img className='w-14' src='ecell.png' alt=''/>
+								</a>
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-4 lg:space-x-8 text-[17px] lg:text-[23px]">
-                  <a href="/" className="nav-link nav-link-ltr ">
+                  <a href="/#home" className="nav-link nav-link-ltr ">
                     <span className="font-primerg">HOME</span>
                   </a>
                   <a href="/#about" className="nav-link nav-link-ltr ">
@@ -42,7 +42,7 @@ function NavBar() {
 "
                   target="_blank"
                   type="submit"
-                  className="text-white border-2 hover:bg-white border-white hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm transition duration-150 ease-in-out"
+                  className="text-white border-2 bg-[#7e32cf] hover:bg-[#d7a1f9] border-none hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm md:text-lg transition duration-150 ease-in-out"
                 >
                   REGISTER NOW
                 </a>
@@ -106,40 +106,40 @@ function NavBar() {
         >
           {(ref) => (
             <div
-              className="md:hidden backdrop-blur bg-cyan-400 bg-opacity-20 absolute z-10 w-full"
+              className="font-primerg md:hidden backdrop-blur bg-[#7e32cf] bg-opacity-20 absolute z-10 w-full"
               id="mobile-menu"
             >
               <div className=" px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="/"
-                  className="font-Montserrat font-bold hover:bg-cyan-700 text-white block px-3 py-2 rounded-md text-base"
+                  href="/#home"
+                  className="font-Montserrat font-bold hover:bg-[#d7a1f9] tracking-widest hover:text-black text-white block px-3 py-2 rounded-md text-base"
                 >
                   HOME
                 </a>
 
                 <a
                   href="/#about"
-                  className="font-Montserrat text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base font-bold"
+                  className="font-Montserrat text-white hover:bg-[#d7a1f9]  tracking-widest hover:text-black   block px-3 py-2 rounded-md text-base font-bold"
                 >
                   ABOUT
                 </a>
 
                 <a
                   href="/#timeline"
-                  className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+                  className="font-Montserrat font-bold text-white hover:bg-[#d7a1f9]  tracking-widest hover:text-black  block px-3 py-2 rounded-md text-base "
                 >
                   TIMELINE
                 </a>
 
                 <a
                   href="/#faqs"
-                  className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+                  className="font-Montserrat font-bold text-white hover:bg-[#d7a1f9]  tracking-widest hover:text-black  block px-3 py-2 rounded-md text-base "
                 >
                   FAQs
                 </a>
                 <a
                   href="/#connect"
-                  className="font-Montserrat font-bold text-white hover:bg-cyan-700 hover:text-white block px-3 py-2 rounded-md text-base "
+                  className="font-Montserrat font-bold text-white hover:bg-[#d7a1f9]  tracking-widest hover:text-black block px-3 py-2 rounded-md text-base "
                 >
                   LET'S CONNECT
                 </a>

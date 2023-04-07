@@ -15,14 +15,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
-      <section className="parallaxSection xs:h-[110vh] sm:h-[120vh] lg:h-auto"style={{position:'relative',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
+      <section id="home" className="parallaxSection xs:h-[110vh] sm:h-[120vh] lg:h-auto"style={{position:'relative',width:'100vw',margin:0,padding:0,overflowX:"hidden", overflowY:"hidden" }}>
      
       
       <Banner/>
       
       
       </section>
-      <section
+      <section 
         className="mb-[5%]"
         style={{
           position: "relative",
