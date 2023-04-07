@@ -17,6 +17,14 @@
   font-family: "Arkhip";
   src: url("./../fonts/Arkhip_font.otf");
 }
+@font-face {
+  font-family: "Happy";
+  src: url("./../fonts/KGHAPPY.ttf");
+}
+@font-face {
+  font-family: "Andromeda";
+  src: url("./../fonts/Andromeda-Bold.otf");
+}
 
 * {
   margin: 0;

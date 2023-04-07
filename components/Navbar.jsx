@@ -18,21 +18,21 @@ function NavBar() {
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-4 lg:space-x-8 text-[17px] lg:text-[23px]">
                   <a href="/" className="nav-link nav-link-ltr ">
-                    <span className="font-arkhip">HOME</span>
+                    <span className="font-primerg">HOME</span>
                   </a>
                   <a href="/#about" className="nav-link nav-link-ltr ">
-				   <span className="font-arkhip">ABOUT</span>
+				   <span className="font-primerg">ABOUT</span>
                   </a>
 
                   <a href="/#timeline" className="nav-link nav-link-ltr">
-				  <span className="font-arkhip">TIMELINE</span>
+				  <span className="font-primerg">TIMELINE</span>
                   </a>
 
                   <a href="/#faqs" className="nav-link nav-link-ltr ">
-				  <span className="font-arkhip">FAQ's</span>
+				  <span className="font-primerg">FAQ's</span>
                   </a>
                   <a href="/#connect" className="nav-link nav-link-ltr ">
-				  <span className="font-arkhip">LET'S CONNECT</span>
+				  <span className="font-primerg">LET'S CONNECT</span>
                   </a>
                 </div>
               </div>
