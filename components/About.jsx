@@ -1,7 +1,7 @@
 import React from 'react'
 export default function About() {
   return (
-    <div className='about'>
+    <div className='about' id="about">
       <div className='about__content text-center  '>
         <h1 className='about__heading font-finger text-center
         xs:pt-10  xs:text-3xl s:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-9xl text-white '>ABOUT E-SUMMIT </h1>
@@ -26,11 +26,11 @@ export default function About() {
           </p>
          </div>
          <div className='div-4 silvery md:col-span-3 md:row-span-1 p-[3%]  rounded drop-shadow-lg card'>
-         <h1  className='font-finger xs:text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 3xl:text-8xl '>Core Values</h1>
+         <h1  className='font-finger xs:text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 3xl:text-8xl md:pb-7'>Core Values</h1>
          <div className='flex  items-center justify-around'>
-         <img className='w-20' src='https://www.freeiconspng.com/thumbs/trophy-png/trophy-png-14.png' alt='' />
-         <img className='w-20' src='https://www.freeiconspng.com/uploads/badge-icon-png-22.png' alt=''/>
-         <img className='w-20'
+         <img className='w-20 3xl:w-28'  src='https://www.freeiconspng.com/thumbs/trophy-png/trophy-png-14.png' alt='' />
+         <img className='w-20 3xl:w-28' src='https://www.freeiconspng.com/uploads/badge-icon-png-22.png' alt=''/>
+         <img className='w-20 3xl:w-28'
           src='target-arrow.png' alt=''
          />
          </div>
