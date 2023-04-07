@@ -1,23 +1,52 @@
-import React from 'react'
-// import './Navbar.css'
-export default function Navbar() {
+import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+// import logo from '../assets/img/logo.svg';
+
+
+
+export const NavBar = () => {
+
+  const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  }
+
   return (
-    <div className='container w-[94%] mx-auto'>
-      <div className='navbar text-white flex
-      justify-between items-center w-full  py-8 ' >
-          <div className='left'>
-          <img className='w-20' src='ecell.png' alt="ecell"/>
-          </div>
-          <div className='right text-2xl font-semibold md:flex-row space-x-14 '>
-          
-            <span><a className='' href="#">HOME</a> </span>
-            <span><a className='' href="#">ABOUT</a> </span>
-            <span><a className='' href="#">FAQs</a> </span>
-            <span><a className='' href="#">CONTACT</a> </span>
-            {/* <span><a className='' href="#">FEEDBACK</a> </span> */}
-            {/* <span className='w-20' ><img src='logo.png' alt="eSummit"/></span> */}
-          </div>
-        </div>
-    </div>
+    <Router>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+        <Container>
+          <Navbar.Brand href="#home">
+            <img src={logo} alt="Logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+            </Nav>
+           
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Router>
   )
 }
