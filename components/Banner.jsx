@@ -52,22 +52,21 @@ export const Banner = () => {
   };
 
   return (
-
     <section
       className="h-screen w-screen grid grid-rows-3 md:grid-cols-2 md:grid-rows-2 bg-[url('/banner-bg.png')] bg-cover bg-no-repeat"
       id="home"
     >
-   
-      <div className="flex flex-col  xs:justify-self-center xl:justify-self-start row-start-1 row-end-2 md:col-start-1 md:col-span-full md:row-span-1 md:row-start-1 font-finger xs:text-5xl xs:pt-16 sm:text-7xl sm:pt-20 lg:pt-20 lg:text-8xl xl:text-[7rem] xl:leading-none justify-self-left  xl:pt-40 xl:pl-28 2xl:text-[14rem]">
-        <div className="">E-SUMMIT'23 </div><div className="sm:pl-20 xs:pl-12 xl:pl-28 ">JUNIOR</div> 
+      <div className="flex flex-col  xs:justify-self-center xl:justify-self-start row-start-1 row-end-2 md:col-start-1 md:col-span-full md:row-span-1 md:row-start-1 font-finger xs:text-5xl xs:pt-16 sm:text-7xl sm:pt-20 lg:pt-20 lg:text-8xl xl:text-[7rem] xl:leading-none justify-self-left  xl:pt-40 xl:pl-28 3xl:text-[14rem]">
+        <div className="">E-SUMMIT'23 </div>
+        <div className="sm:pl-20 xs:pl-12 xl:pl-28 ">JUNIOR</div>
       </div>
 
-      <TrackVisibility className="row-start-2 row-end-3 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 font-finger xs:text-4xl  xs:flex xs:justify-center lg:mt-10 xl:justify-self-start xl:pl-64 xl:pt-32 xl:tracking-widest 2xl:text-9xl">
+      <TrackVisibility className="row-start-2 row-end-3 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 font-finger xs:text-4xl  xs:flex xs:justify-center lg:mt-10 xl:justify-self-start xl:pl-64 xl:pt-32 xl:tracking-widest 3xl:text-9xl">
         {({ isVisible }) => (
           <div
             className={isVisible ? "animate__animated animate__fadeIn " : ""}
           >
-            <h1 className="xs:text-5xl xl:text-6xl 2xl:text-9xl">
+            <h1 className="xs:text-5xl xl:text-6xl 3xl:text-9xl">
               {" "}
               <span
                 className="txt-rotate"
@@ -81,12 +80,12 @@ export const Banner = () => {
             <button
               onClick={() => console.log("connect")}
               className="text-white font-bold font-poppins text-3xl pt-4 tracking-wider flex align-center
-            border-solid border-red-500 2xl:text-6xl"
+            border-solid border-red-500 3xl:text-6xl"
             >
               Register Now{" "}
               <ArrowRightCircle
                 size={25}
-                className="mt-2  text-3xl ml-3 hover:transition-[ ease-in-out ] hover:duration-[0.3s] hover:ml-6 2xl:h-12 2xl:w-12"
+                className="mt-2  text-3xl ml-3 hover:transition-[ ease-in-out ] hover:duration-[0.3s] hover:ml-6 3xl:h-12 3xl:w-12"
               />
             </button>
           </div>

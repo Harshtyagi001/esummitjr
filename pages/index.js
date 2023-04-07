@@ -23,6 +23,9 @@ export default function Home() {
       
       
       </section>
+      <section className="mb-[7%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
+      <About/>
+      </section>
 
       <section className="mb-[7%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
       <Timeline/>
