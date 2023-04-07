@@ -57,7 +57,7 @@ export const Banner = () => {
       id="home"
     >
       <div className="flex flex-col  xs:justify-self-center xl:justify-self-start row-start-1 row-end-2 md:col-start-1 md:col-span-full md:row-span-1 md:row-start-1 font-finger xs:text-5xl xs:pt-16 sm:text-7xl sm:pt-20 lg:pt-20 lg:text-8xl xl:text-[7rem] xl:leading-none justify-self-left  xl:pt-40 xl:pl-28 3xl:text-[14rem]">
-        <div className="">E-SUMMIT'23 </div>
+        <div className=" font-finger">E-SUMMIT'23 </div>
         <div className="sm:pl-20 xs:pl-12 xl:pl-28 ">JUNIOR</div>
       </div>
 
@@ -77,6 +77,7 @@ export const Banner = () => {
               </span>
             </h1>
 
+          
             <button
               onClick={() => console.log("connect")}
               className="text-white font-bold font-poppins text-3xl pt-4 tracking-wider flex align-center

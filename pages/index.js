@@ -22,19 +22,55 @@ export default function Home() {
       
       
       </section>
-      <section className="mb-[5%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
-      <About/>
+      <section
+        className="mb-[5%]"
+        style={{
+          position: "relative",
+          filter: "vignette(40%)",
+          height: "auto",
+          width: "100%",
+          padding: 0,
+        }}
+      >
+        <About />
       </section>
 
-      <section className="mb-[5%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
-      <Timeline/>
+      <section
+        className="mb-[5%]"
+        style={{
+          position: "relative",
+          filter: "vignette(40%)",
+          height: "auto",
+          width: "100%",
+          padding: 0,
+        }}
+      >
+        <Timeline />
       </section>
-      <section className="mb-[5%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
-      <FAQ/>
+      <section
+        className="mb-[5%]"
+        style={{
+          position: "relative",
+          filter: "vignette(40%)",
+          height: "auto",
+          width: "100%",
+          padding: 0,
+        }}
+      >
+        <FAQ />
       </section>
-      {/* <Banner/> */}
-      <section className="mb-[5%]" style={{position:'relative',filter:'vignette(40%)',height:'auto',width:'100%',padding:0 }}>
-      <Contact/>
+
+      <section
+        className="mb-[5%]"
+        style={{
+          position: "relative",
+          filter: "vignette(40%)",
+          height: "auto",
+          width: "100%",
+          padding: 0,
+        }}
+      >
+        <Contact />
       </section>
     </div>
   );
