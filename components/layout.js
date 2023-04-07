@@ -8,3 +8,11 @@ export default function Layout({children}){
       </>
   )
 }
+export default function Layout({children}){
+  return (
+    <>
+    {/* <Navbar/> */}
+      <main>{children}</main>
+      </>
+  )
+}
