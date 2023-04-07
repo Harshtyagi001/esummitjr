@@ -7,7 +7,7 @@ export default function About() {
         xs:pt-10  xs:text-3xl s:text-4xl  lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-9xl text-white '>ABOUT E-SUMMIT </h1>
         <div className=' grid
          md:grid-rows-3 md:grid-cols-6 gap-4 mt-[5%] xs:ml-10 xs:mr-10 md:ml-[13%] md:mr-[13%] text-white'>
-          <div className='div-2 greeny md:col-span-4 md:rows-span-2 p-[3%] rounded card'>
+          <div className=' div-2 greeny md:col-span-4 md:rows-span-2 p-[3%] rounded card'>
          <h1 className='font-andromeda xs:text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 3xl:text-8xl  tracking-wider' >Vision </h1>
           <p className='mt-[3%] xs:text-md sm:text-lg lg:text-xl xl:text-2xl 3xl:text-5xl font-primerg'>An opportunity for the students to interact with college students which will give the aspiring students a clarity in vision.</p>
          </div>
