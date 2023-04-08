@@ -42,7 +42,7 @@ export const data = [
     },
     {
       id: 8,
-      question: "What will be the format of the Round1 question paper?",
+      question: "What will be the format of the Round 1 question paper?",
       answer:
         "It consists of 50 Multiple Choice Questions, examining the participants’ knowledge in various fields, such as Technology, Logical Reasoning, General Knowledge, and more. The Quiz will consist of Multiple Choice Questions with a single correct answer.",
     },

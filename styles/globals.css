@@ -263,7 +263,7 @@ body {
   .nav-link:hover {
     opacity: 1;
     color: #e39ff6;
-    /* color: aqua; */
+    
   }
   
   .nav-link::before {

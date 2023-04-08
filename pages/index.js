@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ/FAQ";
 import { Banner } from "@/components/Banner";
 import {useState, useEffect} from 'react'
 import Loader from "@/components/Loader";
+import Timelinephone from "../components/Timelinephone";
 // import {BsFillArrowUpCircleFill} from 'react-icons/bs'
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
@@ -46,12 +47,12 @@ export default function Home() {
       
       </section>
       <section 
-        className="mb-[5%]"
+        className="mb-[5%] "
         style={{
           position: "relative",
           filter: "vignette(40%)",
           height: "auto",
-          width: "100%",
+          width: "100vw",
           padding: 0,
         }}
       >
@@ -59,18 +60,32 @@ export default function Home() {
       </section>
 
       <section
-        className="mb-[5%]"
+        className="mb-[50px] hidden xl:block"
         style={{
           position: "relative",
           filter: "vignette(40%)",
           height: "auto",
-          width: "100%",
+          width: "auto",
           padding: 0,
           marginTop:"10%"
         }}
       >
         <Timeline />
       </section>
+      <section
+        className="mb-[50px]  xl:hidden"
+        style={{
+          position: "relative",
+          filter: "vignette(40%)",
+          height: "auto",
+          width: "auto",
+          padding: 0,
+          marginTop:"10%"
+        }}
+      >
+        <Timelinephone />
+      </section>
+
       <section
         className="mb-[5%]"
         style={{

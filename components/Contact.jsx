@@ -25,8 +25,6 @@ export const Contact = () => {
        <h1 className='text-center xs:text-3xl md:text-4xl font-happy pt-2  3xl:text-8xl tracking-wider cursor-default '>About E-Cell</h1>
           <div className='abt_content font-primerg xs:text-md md:text-xl 3xl:text-4xl cursor-default'>
           <p className='mb-4'>The Entrepreneurship Cell of IIIT Pune is a non-profit organization that aims to foster the entrepreneurial spirit of young people and provide a platform for the untapped potential of the nation.
-
-          December 2020 marked the beginning of E-Cell IIIT Pune's journey and it's endeavour to nurture entrepreneurial skill in young India.
           </p>
           <p>
           We firmly believe in the four pillars of a successful startup - 'Think', 'Innovate', 'Sell' and 'Prosper'. E-Cell, IIIT Pune has successfully developed and carried out numerous events in recent years, and it continues to embrace entrepreneurial thinking while also making sustainable social impacts. 
