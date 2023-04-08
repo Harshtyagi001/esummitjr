@@ -20,16 +20,16 @@
 .anc{
   background: transparent;
   padding: 0.9rem;
-  display: var(--color-light);
+  display:#7e32cf;
   font-size: 1.1rem;
 }
 
 .anc :hover{
-  /* background-color: rgba(0,0,0,0.3); */
+  background-color: #7e32cf;
 }
 
 .active{
  border-radius: 1.5rem 0 1.5rem 0;
-background: var(--color-primary);
-color: var(--color-bg);
+/* background: var(--color-primary);
+color: var(--color-bg); */
 }

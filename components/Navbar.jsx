@@ -42,7 +42,7 @@ function NavBar() {
 "
                   target="_blank"
                   type="submit"
-                  className="text-white border-2 bg-[#7e32cf] hover:bg-[#d7a1f9] border-none hover:text-black font-semibold rounded-full m-2 py-1 px-3 text-xs sm:text-sm md:text-lg transition duration-150 ease-in-out"
+                  className="flex flex-col justify-center items-center text-white border-2 bg-[#7e32cf] hover:bg-[#d7a1f9] border-none hover:text-black font-semibold rounded-full m-2 py-2 px-3 text-xs sm:text-sm md:text-lg transition duration-150 ease-in-out"
                 >
                   REGISTER NOW
                 </a>

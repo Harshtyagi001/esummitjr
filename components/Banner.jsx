@@ -61,7 +61,7 @@ export const Banner = () => {
         <div className="sm:pl-20 xs:pl-12 xl:pl-28 font-happy ">JUNIOR</div>
       </div>
 
-      <TrackVisibility className="row-start-2 row-end-3 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 font-finger xs:text-4xl xs:pt-12 xs:flex xs:justify-center md:pt-16 lg:mt-10 xl:justify-self-start xl:pl-64 xl:pt-32 xl:tracking-widest 3xl:text-9xl ">
+      <TrackVisibility className="row-start-2 row-end-3 md:col-start-1 md:col-end-2 md:row-start-2 md:row-end-3 font-finger xs:text-4xl xs:pt-8 xs:flex xs:justify-center md:pt-16 lg:mt-10 xl:justify-self-start xl:pl-64 xl:pt-32 xl:tracking-widest 3xl:text-9xl ">
         {({ isVisible }) => (
           <div
             className={isVisible ? "animate__animated animate__fadeIn " : ""}
@@ -88,7 +88,7 @@ export const Banner = () => {
               Register Now{" "}
               <ArrowRightCircle
                 size={25}
-                className="mt-2  text-3xl ml-3 hover:transition-[ ease-in-out ] hover:duration-[0.3s] hover:ml-6 3xl:h-12 3xl:w-12"
+                className="xs:mt-[6px] md:mt-2  text-3xl ml-3 hover:transition-[ ease-in-out ] hover:duration-[0.3s] hover:ml-6 3xl:h-12 3xl:w-12"
               />
             </a>
           </div>
