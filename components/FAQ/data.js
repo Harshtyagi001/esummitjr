@@ -28,8 +28,7 @@ export const data = [
   {
     id: 5,
     question: "Is there any registration fee for the events?",
-    answer:
-      "Yes, INR 200/- is registration fee. You can register on unstop by clicking on the register button on the website",
+    answer: `Yes, INR 200/- is registration fee. You can register on unstop by clicking on the <a href='https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/amp' target='_blank' ><b>Register</b>  </a> button on the website   `,
   },
   {
     id: 6,
@@ -44,7 +43,7 @@ export const data = [
   },
   {
     id: 8,
-    question: "What will be the format of the Round1 question paper?",
+    question: "What will be the format of the Round 1 question paper?",
     answer:
       "It consists of 50 Multiple Choice Questions, examining the participants’ knowledge in various fields, such as Technology, Logical Reasoning, General Knowledge, and more. The Quiz will consist of Multiple Choice Questions with a single correct answer.",
   },

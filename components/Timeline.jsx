@@ -4,7 +4,11 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import { FaHourglassStart,FaHourglassHalf,FaHourglassEnd } from "react-icons/fa";
+import {
+  FaHourglassStart,
+  FaHourglassHalf,
+  FaHourglassEnd,
+} from "react-icons/fa";
 
 const Timeline = () => {
   return (
@@ -33,13 +37,14 @@ const Timeline = () => {
           icon={<FaHourglassStart />}
         >
           <h3 className="vertical-timeline-element-title  text-2xl text-indigo-200 font-arkhip">
-          Registration:
+            Registration:
           </h3>
           <h4 className="vertical-timeline-element-subtitle text-[#CE8CF8] text-1xl font-primelt">
             Registration Ongoing:
           </h4>
           <p className="text-gray-300 font-primelt">
-            Registration is Ongoing on unstop.<br/>
+            Registration is Ongoing on unstop.
+            <br />
             Deadline: 13th April 11:59pm
           </p>
         </VerticalTimelineElement>
@@ -59,7 +64,7 @@ const Timeline = () => {
             hover: { color: "black", fontColor: "white" },
           }}
           contentArrowStyle={{ borderRight: "7px solid  #CE8CF8" }}
-          date="6 April 23 - 13 April 23"
+          date="6 April 23 - 14 April 23"
           iconStyle={{ background: "black", color: "#fff" }}
           icon={<FaHourglassHalf />}
         >
@@ -70,9 +75,10 @@ const Timeline = () => {
             Test your skills:
           </h4>
           <p className="text-gray-300 font-primelt">
-          The first round of E-Summit’23 Jr will be held offline at your respective schools.
-          If the corresponding school can’t host round 1, it will take place at the campus of IIIT Pune
-          on the 8th and 9th of April or online on unstop platform.
+            The first round of E-Summit’23 Jr will be held offline at your
+            respective schools. If the corresponding school can’t host round 1,
+            it will take place at the campus of IIIT Pune on the 8th and 9th of
+            April or online on unstop platform.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -102,9 +108,10 @@ const Timeline = () => {
             Endgame:
           </h4>
           <p className="text-gray-300 font-primelt">
-          The finale of E-Summit’23 Jr will be held at the campus of the Indian Institute of Information Technology, Pune,
-           on the 15th-16th of April. More details about the final round will be announced soon to the finalists.
-
+            The finale of E-Summit’23 Jr will be held at the campus of the
+            Indian Institute of Information Technology, Pune, on the 15th-16th
+            of April. More details about the final round will be announced soon
+            to the finalists.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
