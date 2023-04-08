@@ -124,7 +124,7 @@ p.danger {
 
 body {
   /* background-image: linear-gradient(to right, #090a0a, #060e10, #051115, #05141b, #091520); */
-  font-family: 'Finger-Paint', sans-serif;
+  font-family: 'Happy','Andromeda', 'Prime-Light','Prime-Regular','Arkhip', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x:hidden; */

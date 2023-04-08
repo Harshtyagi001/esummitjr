@@ -53,7 +53,7 @@ export const Banner = () => {
 
   return (
     <section
-      className="h-screen w-screen grid grid-rows-3 md:grid-cols-2 md:grid-rows-2 bg-[url('/banner-bg.png')] bg-cover bg-no-repeat cursor-default"
+      className="h-screen w-screen grid grid-rows-3 md:grid-cols-2 md:grid-rows-2 bg-[url('https://i.imgur.com/xBPhymR.png')] bg-cover bg-no-repeat cursor-default"
       id="home"
     >
       <div className="flex flex-col  xs:justify-self-center xl:justify-self-start row-start-1 row-end-2 md:col-start-1 md:col-span-full md:row-span-1 md:row-start-1 font-finger xs:text-4xl xs:pt-32 sm:text-7xl sm:pt-22 md:pt-40 lg:pt-28 lg:text-8xl xl:text-[7rem] xl:leading-none justify-self-left xl:pt-60 xl:pl-20 3xl:text-[14rem]">
