@@ -6,12 +6,9 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { FaHourglassStart,FaHourglassHalf,FaHourglassEnd } from "react-icons/fa";
 
-
-
-
 const Timeline = () => {
   return (
-    <div className="xs:mx-1.5 md:mx-10 cursor-default">
+    <div id="timeline" className="xs:mx-1.5 md:mx-10 cursor-default">
       <h3 className=" text-white md:text-center xs:pl-3 xs:text-5xl sm:text-left sm:ml-3 md:text-7xl font-happy ">
         TIMELINE
       </h3>
