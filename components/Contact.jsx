@@ -26,8 +26,11 @@ export const Contact = () => {
           <div className='abt_content font-primerg xs:text-md md:text-xl 3xl:text-4xl cursor-default'>
           <p className='mb-4'>The Entrepreneurship Cell of IIIT Pune is a non-profit organization that aims to foster the entrepreneurial spirit of young people and provide a platform for the untapped potential of the nation.
           </p>
-          <p>
+          <p className='mb-4'>
           We firmly believe in the four pillars of a successful startup - 'Think', 'Innovate', 'Sell' and 'Prosper'. E-Cell, IIIT Pune has successfully developed and carried out numerous events in recent years, and it continues to embrace entrepreneurial thinking while also making sustainable social impacts. 
+          </p>
+          <p>
+          E-Cell IIIT Pune also undertook Breaking Conventions, a YouTube series that garnered massive views and interest. Through this, E-Cell IIIT Pune fulfilled its commitment to pioneer opportunities to cultivate entrepreneurship and assist the youth in nurturing their innovative mindsets.
           </p>
 
  </div>
@@ -44,6 +47,7 @@ export const Contact = () => {
            <form className={`${Styles.form}`} ref={form} onSubmit={sendEmail}>
               <input type='text' name='name' placeholder='Full Name ' required />
               <input type='email' name='email' placeholder='Email' required/>
+              <input type='tel' name='phone' placeholder='Mobile No.'/>
               <textarea name='message' rows='3' placeholder='Your Message' required></textarea>
               <button className='btn btn_primary' type='submit'>Send Message</button>
            </form>
