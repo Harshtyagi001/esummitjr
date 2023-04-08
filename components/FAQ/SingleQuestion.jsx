@@ -13,7 +13,7 @@ export default function SingleQuestion({ question, answer }) {
           onClick={() => setShowAnswer(!showAnswer)}
           className={showAnswer ? `${styles.faqopen}` : `${styles.faq}`}
         >
-          <h2 className="xs:text-sm md:text-2xl  tracking-wider cursor-pointer  font-primelt ">
+          <h2 className="xs:text-sm md:text-2xl  tracking-wider cursor-pointer flex items-center font-primelt ">
             {question}
           </h2>
           {showAnswer ? (
