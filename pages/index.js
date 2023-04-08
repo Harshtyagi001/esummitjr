@@ -72,7 +72,7 @@ export default function Home() {
       >
         <Timeline />
       </section>
-      <section
+      <section id="timeline"
         className="mb-[50px]  xl:hidden"
         style={{
           position: "relative",

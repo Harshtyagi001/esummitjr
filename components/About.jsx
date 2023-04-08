@@ -19,7 +19,7 @@ export default function About() {
          <div className='div-3  platy  md:row-span-2 md:col-span-3 p-[3%]  backdrop-blur-lg rounded drop-shadow-lg card '>
          <h1  className='font-andromeda xs:text-2xl sm:text-3xl lg:text-4xl xl:text-6xl 3xl:text-8xl  tracking-wider'>Details</h1>
          <p className='p-[3%] mt-[3%] xs:text-md sm:text-lg 3xl:text-5xl xl:text-2xl font-primerg'>
-          Round 1 will be a written exam which will have questions related to Reasoning, Basic English, General Knowledge, and Basics of Computers.
+          Round 1 will be a written exam which will have questions related to Reasoning, English, General Knowledge, and Basics of Computers.
           </p>
           <p className='p-[3%]  xs:text-md sm:text-lg 3xl:text-5xl xl:text-2xl font-primerg'>
           Based on the results of Round 1, top 32 students will be called to the campus of IIIT Pune and will be give a chance to participate in various events.
