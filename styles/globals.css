@@ -5,25 +5,25 @@
 @tailwind utilities;
 @font-face {
   font-family: "Prime-Light";
-  src: url("./../fonts/Arkhip_font.otf");
+  src: url("https://res.cloudinary.com/dj2jqvkto/raw/upload/v1680940107/Prime-Light_erplyn.ttf");
 }
 
 @font-face {
   font-family: "Prime-Regular";
-  src: url("./../fonts/Prime-Regular.ttf");
+  src: url("https://res.cloudinary.com/dj2jqvkto/raw/upload/v1680940153/Prime-Regular_vbttow.ttf");
 }
 
 @font-face {
   font-family: "Arkhip";
-  src: url("./../fonts/Arkhip_font.otf");
+  src: url("https://res.cloudinary.com/dj2jqvkto/raw/upload/v1680940203/Arkhip_font_rbxsuu.otf");
 }
 @font-face {
   font-family: "Happy";
-  src: url("./../fonts/KGHAPPY.ttf");
+  src: url("https://res.cloudinary.com/dj2jqvkto/raw/upload/v1680939629/KGHAPPY_cs0fwp.ttf");
 }
 @font-face {
   font-family: "Andromeda";
-  src: url("./../fonts/Andromeda-Bold.otf");
+  src: url("https://res.cloudinary.com/dj2jqvkto/raw/upload/v1680940068/Andromeda-Bold_dn8s8x.otf");
 }
 
 * {
