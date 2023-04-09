@@ -11,7 +11,7 @@ function NavBar() {
           <div className="flex items-center justify-between ">
             <div className="w-full flex items-center justify-between">
               <div className="">
-                <a href="https://esummit23.ecelliiitp.org/" target="_blank" className="navbar-brand">
+                <a href="https://esummit23.ecelliiitp.org/" alt="" target="_blank" className="navbar-brand">
 								<img className='w-14' src='https://i.imgur.com/lG5djXZ.png' alt=''/>
 								</a>
               </div>
@@ -38,8 +38,8 @@ function NavBar() {
               </div>
               <div>
                 <a
-                  href="https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/amp  
-"
+                  href="https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/" 
+                  alt=""
                   target="_blank"
                   type="submit"
                   className="flex flex-col justify-center items-center text-white border-2 bg-[#7e32cf] hover:bg-[#d7a1f9] border-none hover:text-black font-semibold rounded-full m-2 py-2 px-3 text-xs sm:text-sm md:text-lg transition duration-150 ease-in-out"
