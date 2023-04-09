@@ -79,7 +79,7 @@ export const Banner = () => {
 
             
             <a
-              href="https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/amp "
+              href="https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/"
               target="_blank"
               type="submit"
               className="font-bold font-primerg xs:text-2xl pt-7 xl:pt-9 tracking-wider flex md:text-[2.3rem] align-center
