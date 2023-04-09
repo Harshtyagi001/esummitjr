@@ -27,7 +27,7 @@ export default function SingleQuestion({ question, answer }) {
           )}
         </div>
         <div className={`${styles.faq_ans}`}>
-          {showAnswer && <p className="xs:text-[0.9rem] md:text-[1.2rem] font-primerg">{answer}</p>}
+          {showAnswer && <div dangerouslySetInnerHTML={{ __html: answer }} />}
         </div>
       </div>
     </>

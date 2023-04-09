@@ -47,7 +47,7 @@ export const Contact = () => {
            <form className={`${Styles.form}`} ref={form} onSubmit={sendEmail}>
               <input type='text' name='name' placeholder='Full Name ' required />
               <input type='email' name='email' placeholder='Email' required/>
-              <input type='text' name='phone' placeholder='Mobile No.'/>
+              <input type='tel' name='phone' placeholder='Mobile No.'/>
               <textarea name='message' rows='3' placeholder='Your Message' required></textarea>
               <button className='btn btn_primary' type='submit'>Send Message</button>
            </form>
