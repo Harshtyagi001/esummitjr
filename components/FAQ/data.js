@@ -28,7 +28,7 @@ export const data = [
   {
     id: 5,
     question: "Is there any registration fee for the events?",
-    answer: `Yes, INR 200/- is registration fee. You can register on unstop by clicking on the <a href='https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/amp' target='_blank' ><b>Register</b>  </a> button on the website   `,
+    answer: `Yes, INR 200/- is registration fee. You can register on unstop by clicking on the <a href='https://unstop.com/quiz/general-quiz-competition-juniors-e-summit23-indian-institute-of-information-technology-iiit-pune-658860/' target='_blank' ><b>Register</b>  </a> button on the website   `,
   },
   {
     id: 6,
