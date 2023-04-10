@@ -77,7 +77,7 @@ const Timeline = () => {
           <p className="text-gray-300 font-primelt">
             The first round of E-Summit’23 Jr will be held offline at your
             respective schools. If the corresponding school can’t host round 1,
-            it will take place at the campus of IIIT Pune on the 8th and 9th of
+            it will take place at the campus of IIIT Pune on the 13th of
             April or online on unstop platform.
           </p>
         </VerticalTimelineElement>
