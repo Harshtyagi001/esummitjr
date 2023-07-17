@@ -1,0 +1,35 @@
+.navbar{
+  background-color: rgba(0 ,0 ,0 ,0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  /* position: fixed; */
+  /* left: 50%;
+  transform: translate(-50%) */
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  left: calc(50% - 11rem);
+  bottom: 2rem;
+}
+
+
+.anc{
+  background: transparent;
+  padding: 0.9rem;
+  display:#7e32cf;
+  font-size: 1.1rem;
+}
+
+.anc :hover{
+  background-color: #7e32cf;
+}
+
+.active{
+ border-radius: 1.5rem 0 1.5rem 0;
+/* background: var(--color-primary);
+color: var(--color-bg); */
+}
